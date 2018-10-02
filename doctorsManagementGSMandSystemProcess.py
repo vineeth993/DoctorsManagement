@@ -178,7 +178,7 @@ class gsmSystemProcess():
         
     def shieldSendMsg(self, message=None, phoneNumber=None):
         self.dbUpdateStat = True
-        msgApi = "http://bulksms.mysmsmantra.com:8080/WebSMS/SMSAPI.jsp?username=myfloorcs&password=821609184&sendername=MFMART&mobileno="+phoneNumber+"&message="+message
+        msgApi = "http://bulksms.mysmsmantra.com:8080/WebSMS/SMSAPI.jsp?username=""&password=""&sendername=""&mobileno="+phoneNumber+"&message="+message
         print "msgApi = ", msgApi
         print "msgCommand = ",self.gsmHttpPost + '"'+msgApi+'"'
         self.shieldWrite(self.gsmHttpPost + '"'+msgApi+'"')
